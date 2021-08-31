@@ -9,23 +9,37 @@
 /* Begin PBXBuildFile section */
 		ED8ED4EF26DD5D3900E3A640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED4EE26DD5D3900E3A640 /* AppDelegate.swift */; };
 		ED8ED4F126DD5D3900E3A640 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED4F026DD5D3900E3A640 /* SceneDelegate.swift */; };
-		ED8ED4F326DD5D3900E3A640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED4F226DD5D3900E3A640 /* ViewController.swift */; };
 		ED8ED4F626DD5D3900E3A640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8ED4F426DD5D3900E3A640 /* Main.storyboard */; };
 		ED8ED4F926DD5D3900E3A640 /* WhoWantToBeaMillionaire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED4F726DD5D3900E3A640 /* WhoWantToBeaMillionaire.xcdatamodeld */; };
 		ED8ED4FB26DD5D4A00E3A640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8ED4FA26DD5D4A00E3A640 /* Assets.xcassets */; };
 		ED8ED4FE26DD5D4A00E3A640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8ED4FC26DD5D4A00E3A640 /* LaunchScreen.storyboard */; };
+		ED8ED50826DD654F00E3A640 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED50726DD654F00E3A640 /* Question.swift */; };
+		ED8ED50A26DD67CE00E3A640 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED50926DD67CD00E3A640 /* MainViewController.swift */; };
+		ED8ED50F26DD6D7000E3A640 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED50E26DD6D7000E3A640 /* Record.swift */; };
+		ED8ED51126DD6DE300E3A640 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED51026DD6DE300E3A640 /* Game.swift */; };
+		ED8ED51326DD6E1E00E3A640 /* SessionOfGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED51226DD6E1E00E3A640 /* SessionOfGame.swift */; };
+		ED8ED51526DD7BEA00E3A640 /* RecordsCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED51426DD7BEA00E3A640 /* RecordsCaretaker.swift */; };
+		ED8ED51726DE3BAB00E3A640 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED51626DE3BAB00E3A640 /* GameViewController.swift */; };
+		ED8ED51A26DE449B00E3A640 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8ED51926DE449B00E3A640 /* RecordsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED8ED4EB26DD5D3900E3A640 /* WhoWantToBeaMillionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoWantToBeaMillionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8ED4EE26DD5D3900E3A640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED8ED4F026DD5D3900E3A640 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED8ED4F226DD5D3900E3A640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED8ED4F526DD5D3900E3A640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED8ED4F826DD5D3900E3A640 /* WhoWantToBeaMillionaire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhoWantToBeaMillionaire.xcdatamodel; sourceTree = "<group>"; };
 		ED8ED4FA26DD5D4A00E3A640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED8ED4FD26DD5D4A00E3A640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED8ED4FF26DD5D4A00E3A640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED8ED50726DD654F00E3A640 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		ED8ED50926DD67CD00E3A640 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ED8ED50E26DD6D7000E3A640 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		ED8ED51026DD6DE300E3A640 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		ED8ED51226DD6E1E00E3A640 /* SessionOfGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionOfGame.swift; sourceTree = "<group>"; };
+		ED8ED51426DD7BEA00E3A640 /* RecordsCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsCaretaker.swift; sourceTree = "<group>"; };
+		ED8ED51626DE3BAB00E3A640 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		ED8ED51926DE449B00E3A640 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,55 @@
 		ED8ED4ED26DD5D3900E3A640 /* WhoWantToBeaMillionaire */ = {
 			isa = PBXGroup;
 			children = (
+				ED8ED51826DE446500E3A640 /* Controllers */,
+				ED8ED50D26DD6D4A00E3A640 /* Models */,
+				ED8ED50626DD60F500E3A640 /* Resourses */,
+				ED8ED50526DD60CD00E3A640 /* App */,
+			);
+			path = WhoWantToBeaMillionaire;
+			sourceTree = "<group>";
+		};
+		ED8ED50526DD60CD00E3A640 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				ED8ED4EE26DD5D3900E3A640 /* AppDelegate.swift */,
 				ED8ED4F026DD5D3900E3A640 /* SceneDelegate.swift */,
-				ED8ED4F226DD5D3900E3A640 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED8ED50626DD60F500E3A640 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
 				ED8ED4F426DD5D3900E3A640 /* Main.storyboard */,
 				ED8ED4FA26DD5D4A00E3A640 /* Assets.xcassets */,
 				ED8ED4FC26DD5D4A00E3A640 /* LaunchScreen.storyboard */,
 				ED8ED4FF26DD5D4A00E3A640 /* Info.plist */,
 				ED8ED4F726DD5D3900E3A640 /* WhoWantToBeaMillionaire.xcdatamodeld */,
 			);
-			path = WhoWantToBeaMillionaire;
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		ED8ED50D26DD6D4A00E3A640 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED8ED50726DD654F00E3A640 /* Question.swift */,
+				ED8ED50E26DD6D7000E3A640 /* Record.swift */,
+				ED8ED51026DD6DE300E3A640 /* Game.swift */,
+				ED8ED51226DD6E1E00E3A640 /* SessionOfGame.swift */,
+				ED8ED51426DD7BEA00E3A640 /* RecordsCaretaker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED8ED51826DE446500E3A640 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED8ED50926DD67CD00E3A640 /* MainViewController.swift */,
+				ED8ED51626DE3BAB00E3A640 /* GameViewController.swift */,
+				ED8ED51926DE449B00E3A640 /* RecordsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8ED51726DE3BAB00E3A640 /* GameViewController.swift in Sources */,
+				ED8ED51A26DE449B00E3A640 /* RecordsViewController.swift in Sources */,
+				ED8ED50826DD654F00E3A640 /* Question.swift in Sources */,
+				ED8ED51526DD7BEA00E3A640 /* RecordsCaretaker.swift in Sources */,
+				ED8ED51326DD6E1E00E3A640 /* SessionOfGame.swift in Sources */,
 				ED8ED4F926DD5D3900E3A640 /* WhoWantToBeaMillionaire.xcdatamodeld in Sources */,
-				ED8ED4F326DD5D3900E3A640 /* ViewController.swift in Sources */,
+				ED8ED51126DD6DE300E3A640 /* Game.swift in Sources */,
+				ED8ED50A26DD67CE00E3A640 /* MainViewController.swift in Sources */,
 				ED8ED4EF26DD5D3900E3A640 /* AppDelegate.swift in Sources */,
+				ED8ED50F26DD6D7000E3A640 /* Record.swift in Sources */,
 				ED8ED4F126DD5D3900E3A640 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC675G235N;
-				INFOPLIST_FILE = WhoWantToBeaMillionaire/Info.plist;
+				INFOPLIST_FILE = WhoWantToBeaMillionaire/Resourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC675G235N;
-				INFOPLIST_FILE = WhoWantToBeaMillionaire/Info.plist;
+				INFOPLIST_FILE = WhoWantToBeaMillionaire/Resourses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
