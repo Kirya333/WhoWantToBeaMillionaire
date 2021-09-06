@@ -19,14 +19,40 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var questionTableView: UITableView!
     @IBOutlet weak var hintLabel: UILabel!
+    @IBOutlet weak var countQuestionsLabel: UILabel!
     
-    var questions = Game.shared.questions
+    var questions: [Question] = []
+    
+    private var orderOfQuestionsStratagy: OrderOfQuestionsStratagy {
+        switch Game.shared.difficulty {
+        case .random:
+            return RandomOrderOfQuestionsStratagy()
+        case .sequential:
+            return SequentialOrderOfQuestionsStratagy()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setQuestion()
         
         questionTableView.delegate = self
         questionTableView.dataSource = self
+        
+        if let gameSession = Game.shared.gameSession {
+            gameSession.countCorrectAnswer.addObserver(
+            self,
+            optoins: [.new, .initial],
+            closure: { [weak self] (countCorrectAnswer, _) in
+                guard let self = self else { return }
+                self.countQuestionsLabel.text = "Question №\(countCorrectAnswer + 1). Progress: \(String(format:"%.2f", gameSession.percentOfCorrectAnswers * 100))%"
+                
+            })
+        }
+    }
+    
+    func setQuestion() {
+        self.questions = self.orderOfQuestionsStratagy.getQuestions()
     }
 }
 
@@ -34,15 +60,15 @@ extension GameViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions[section].answers.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return questionTableView.dequeueReusableCell(withIdentifier: "AnswerCellIdentifier", for: indexPath)
     }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
+//
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 150
     }
