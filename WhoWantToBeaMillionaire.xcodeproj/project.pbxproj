@@ -124,6 +124,7 @@
 		ED8ED50D26DD6D4A00E3A640 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EDE79A3226F127A2004CEA3D /* Stratagies */,
 				ED8ED50726DD654F00E3A640 /* Question.swift */,
 				ED8ED50E26DD6D7000E3A640 /* Record.swift */,
 				ED8ED51026DD6DE300E3A640 /* Game.swift */,
@@ -131,9 +132,6 @@
 				ED8ED51426DD7BEA00E3A640 /* RecordsCaretaker.swift */,
 				ED8ED51F26E5355C00E3A640 /* QuestionsBuilder.swift */,
 				ED8ED52126E538B500E3A640 /* Difficulty.swift */,
-				ED8ED52326E53B6500E3A640 /* OrderOfQuestionsStratagy.swift */,
-				ED8ED52526E53BCA00E3A640 /* RandomOrderOfQuestionsStratagy.swift */,
-				ED8ED52726E53C3400E3A640 /* SequentialOrderOfQuestionsStratagy.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +146,16 @@
 				ED8ED51D26E5345500E3A640 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDE79A3226F127A2004CEA3D /* Stratagies */ = {
+			isa = PBXGroup;
+			children = (
+				ED8ED52726E53C3400E3A640 /* SequentialOrderOfQuestionsStratagy.swift */,
+				ED8ED52526E53BCA00E3A640 /* RandomOrderOfQuestionsStratagy.swift */,
+				ED8ED52326E53B6500E3A640 /* OrderOfQuestionsStratagy.swift */,
+			);
+			path = Stratagies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
