@@ -38,7 +38,7 @@ extension RecordsViewController: UITableViewDataSource {
         let record = Game.shared.records[indexPath.row]
         
         cell.textLabel?.text = getCellDateText(forIndexPath: indexPath, andDate: record.date)
-        cell.detailTextLabel?.text = "Cash: \(record.Prize) - Percent: \(String(format: "%.2f", record.percentCurrentAnswers * 100))"
+        cell.detailTextLabel?.text = "Cash: \(record.Prize). Progress: \(String(format: "%.2f", record.percentCurrentAnswers * 100))%"
         return cell
     }
     

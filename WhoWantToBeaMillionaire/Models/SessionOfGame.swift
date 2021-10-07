@@ -10,15 +10,20 @@ import Foundation
 class SessionOfGame {
     
     var countQuestions: Int = Game.shared.questions.count
-    var countCorrectAnswer: Int = 0
+    var countCorrectAnswer: Observable<Int> = Observable(0)
     var Prize: Int = 0
+    var percentOfCorrectAnswers: Double {
+        get {
+            return Double(self.countCorrectAnswer.value) / Double(self.countQuestions)
+        }
+    }
     
 }
 
 extension SessionOfGame: GameViewControllerDelegate {
     
     func gameViewController(_ viewController: GameViewController, chooseCorrectAnswer question: Question) {
-        self.countCorrectAnswer += 1
+        self.countCorrectAnswer.value += 1
         self.Prize += question.prize
     }
     
